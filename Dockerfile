@@ -1,6 +1,6 @@
 FROM jruby:9.1.13.0
 
-RUN apt-get update -qq && apt-get install -y build-essential apt-transport-https apt-utils libmysqlclient-dev
+RUN apt-get update -qq && apt-get install -y build-essential apt-transport-https apt-utils
 RUN apt-get install -y libxml2-dev libxslt1-dev curl
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
